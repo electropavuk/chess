@@ -16,10 +16,7 @@ board_name = 'metal-1024.jpg'
 board_pos = (50, 50) # from top left in pixels
 board_margin = 50
 
-<<<<<<< HEAD
 piece_to_square_ration = 1
 # piece_to_square_ration = 0.93
-=======
 # piece_to_square_ration = 1 # piece takes 80% of square
 piece_to_square_ration = 0.93 # piece takes 80% of square
->>>>>>> 1f8a3b105b9d76b1ade139400c0e3f78606ac2e5

@@ -15,13 +15,10 @@ while True:
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             raise SystemExit
-<<<<<<< HEAD
         elif event.type == pygame.MOUSEBUTTONDOWN:
             print(event.pos)
 
         s.update()
         b.make_move_from_uci(input())
-=======
 
         s.update()
->>>>>>> 1f8a3b105b9d76b1ade139400c0e3f78606ac2e5

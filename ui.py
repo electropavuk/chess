@@ -33,10 +33,7 @@ class Scene(pygame.sprite.Sprite):
 
 class BoardScene(pygame.sprite.Sprite):
     piece_sprites = dict()
-<<<<<<< HEAD
     board_sprite = None
-=======
->>>>>>> 1f8a3b105b9d76b1ade139400c0e3f78606ac2e5
 
     def __init__(self, board):
         super().__init__()
@@ -49,10 +46,7 @@ class BoardScene(pygame.sprite.Sprite):
 
 
     def update(self):
-<<<<<<< HEAD
         self.sprite = self.board_sprite.copy()
-=======
->>>>>>> 1f8a3b105b9d76b1ade139400c0e3f78606ac2e5
         for i in range(8):
             for j in range(8):
                 piece = self.board.board[i][j]
@@ -61,25 +55,19 @@ class BoardScene(pygame.sprite.Sprite):
                     rect = sprite.get_rect()
                     rect.center = ((j + 1/2) * self.square_size, 
                                     self.size - (i + 1/2) * self.square_size)
-<<<<<<< HEAD
                     self.sprite.blit(sprite, rect)
-=======
                     print(rect.center)
                     self.sprite.blit(sprite, rect)
                     print(time())
->>>>>>> 1f8a3b105b9d76b1ade139400c0e3f78606ac2e5
 
     def set_sprites(self):
         board_path = os.path.join('ui', 'boards', board_name)
         # board_path = os.path.join('ui', 'pieces', curent_piece_set, 'bQ' + piece_names_ext)
-<<<<<<< HEAD
         self.board_sprite = pygame.image.load(board_path)
         self.board_sprite = pygame.transform.scale(self.board_sprite, (self.size,) * 2)
         self.sprite = self.board_sprite.copy()
-=======
         self.sprite = pygame.image.load(board_path)
         self.sprite = pygame.transform.scale(self.sprite, (self.size,) * 2)
->>>>>>> 1f8a3b105b9d76b1ade139400c0e3f78606ac2e5
         self.rect = self.sprite.get_rect()
         self.rect.topleft = board_pos
 
